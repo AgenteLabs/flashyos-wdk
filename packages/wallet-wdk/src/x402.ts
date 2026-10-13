@@ -164,6 +164,17 @@ export function eip3009TypedData(accept: X402Accept, from: string, options: { no
  * anything that is not exactly a TransferWithAuthorization.
  */
 export function extractEip3009Operation(chain: string, typedData: unknown): OperationRecord | null {
+  try {
+    return extractEip3009OperationInner(chain, typedData);
+  } catch {
+    // Totality, as for extractOperation: the signer re-derives this before
+    // spending the nonce, so it must refuse — never throw — on a malformed
+    // typed-data shape. (30E Ventures audit, finding N-02.)
+    return null;
+  }
+}
+
+function extractEip3009OperationInner(chain: string, typedData: unknown): OperationRecord | null {
   const t = typedData as Eip712TypedData;
   if (!t || typeof t !== 'object' || t.primaryType !== 'TransferWithAuthorization' || !t.domain || !t.message) return null;
   if (!Number.isInteger(t.domain.chainId) || chain !== `evm:${t.domain.chainId}`) return null;

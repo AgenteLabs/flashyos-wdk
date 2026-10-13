@@ -107,3 +107,15 @@ on the 12th" is answerable with citations.
    one holding only `wallet:settle` cannot propose.
 5. An authorization names an exact asset contract and exact destination; a
    symbol or a prefix is not an address.
+6. **Totality.** Extraction and the signer's HTTP face answer every input with
+   a record or a coded refusal, and never throw. This is a liveness control,
+   not only a hygiene one: the signer re-derives the operation *before* the
+   nonce is spent, so an extractor that throws on a malformed call both crashes
+   the process (an unhandled rejection in an async handler exits Node) and
+   leaves the authorization unconsumed to drive the crash again. `extractOperation`
+   and `extractEip3009Operation` refuse rather than throw on any call shape;
+   `extractEvmOperation` refuses a non-string `to`/`data` by type; the signer
+   server wraps the whole handler (500, never a dead process) and caps the
+   request body (413 before buffering it). Named by the 30E Ventures audit as
+   finding N-02, reproduced and fixed with `extractors/totality.test.ts` and
+   `signer/src/server.test.ts`.
