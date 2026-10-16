@@ -62,6 +62,14 @@ function word(hex: string, index: number): string | null {
  * call is not one this extractor can vouch for.
  */
 export function extractEvmOperation(chainId: string | number, call: EvmCall): OperationRecord | null {
+  // A call is whatever the agent handed us; its fields are not typed at
+  // runtime. The shape must be an object, and `to`/`data` must be strings
+  // before we touch string methods — an array `to` or a numeric `data` is a
+  // malformed call, which refuses, and must never throw: a throw crashes the
+  // signer process (30E audit, N-02).
+  if (!call || typeof call !== 'object') return null;
+  if (typeof call.to !== 'string') return null;
+  if (call.data !== undefined && typeof call.data !== 'string') return null;
   if (!ADDRESS_RE.test(call.to)) return null;
   const chain = `evm:${chainId}`;
   const data = (call.data ?? '0x').toLowerCase();
