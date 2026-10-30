@@ -1,5 +1,6 @@
 {
   "name": "@flashyos/wallet-wdk",
+  "private": true,
   "version": "0.1.0",
   "description": "Governed economic agency for FlashyOS agents on Tether WDK: the AAO WalletCapability, a FlashyOS authorizer client, an MCP elicitation handler, and a WDK policy rule that defers to the authorization plane.",
   "keywords": ["flashyos", "wdk", "tether", "wallet", "agents", "authorization"],

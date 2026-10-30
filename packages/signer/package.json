@@ -1,5 +1,6 @@
 {
   "name": "@flashyos/signer",
+  "private": true,
   "version": "0.1.0",
   "description": "The isolated signer for the FlashyOS wallet authorization plane: verifies an Ed25519-signed SpendAuthorization, re-derives the operation from the real call, refuses on any mismatch, executes through Tether WDK, and reports settlement. Holds the seed; never holds the plane's private key.",
   "keywords": [

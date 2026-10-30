@@ -1,3 +1,7 @@
+> **Retired 2026-10-30 — superseded by https://github.com/FlashyFinancial/wallet-core; nothing here is updated; the published packages are `@flashyfinancial/wallet-wdk`, `@flashyfinancial/signer`, `@flashyfinancial/wdk` once their first release lands, and `@flashyos/*` until then.**
+>
+> This repository is kept read-only as a record. Every `package.json` here is `private: true`, so nothing can be published from it by accident; the weekly scans run only on manual dispatch; `test/retired.test.mjs` holds both. Open issues and changes against `wallet-core`.
+
 # FlashyOS on Tether WDK — the public mirror
 
 ```

@@ -1,5 +1,6 @@
 {
   "name": "@flashyos/wdk",
+  "private": true,
   "version": "0.1.0",
   "description": "The FlashyOS agent object: identity, authority, wallet, memory and partners behind one interface. Create an agent, give it an identity, provision financial capabilities on Tether WDK, set its permissions, let it transact, record what it did, coordinate it with other agents \u2014 through one object, one event system, any chain WDK reaches.",
   "keywords": [
