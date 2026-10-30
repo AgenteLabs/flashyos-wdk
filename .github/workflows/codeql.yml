@@ -1,11 +1,12 @@
 name: CodeQL
 
+# Retired 2026-10-30: this mirror is superseded by
+# https://github.com/FlashyFinancial/wallet-core and nothing here is updated.
+# The push/pull_request/schedule triggers are removed so a dead repository does
+# not keep spending runs on a scan nobody reads; the file is kept, runnable by
+# hand, so the history of what was checked here stays legible.
 on:
-  push:
-    branches: [main]
-  pull_request:
-  schedule:
-    - cron: '0 6 * * 1' # weekly, Monday
+  workflow_dispatch:
 
 # One analysis per ref at a time: concurrent pull_request runs restored an
 # overlay-base database written by a different codeql-action version and failed

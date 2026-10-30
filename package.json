@@ -8,7 +8,7 @@
   "scripts": {
     "typecheck": "npm run typecheck --workspaces",
     "lint": "node tools/lint.mjs",
-    "test": "npm run test --workspaces && node --test test/strike.test.mjs test/test-script.test.mjs test/workflow-pins.test.mjs test/lint.test.mjs test/repository-url.test.mjs",
+    "test": "npm run test --workspaces && node --test test/strike.test.mjs test/test-script.test.mjs test/workflow-pins.test.mjs test/lint.test.mjs test/repository-url.test.mjs test/retired.test.mjs",
     "build": "npm run build --workspaces"
   },
   "engines": { "node": ">=22" }
