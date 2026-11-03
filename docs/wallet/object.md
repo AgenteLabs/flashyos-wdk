@@ -1,4 +1,4 @@
-# The object — `@flashyos/wdk`
+# The object — `@flashynetwork/wdk`
 
 Status: Phase 14½ · built and tested · 2026-09-20
 

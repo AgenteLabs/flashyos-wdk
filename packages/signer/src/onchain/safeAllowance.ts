@@ -20,7 +20,7 @@
 // 2026-09-20): getTokenAllowance returns [amount, spent, resetTimeMin,
 // lastResetMin, nonce]; resetTimeMin 0 means no automatic reset.
 
-import type { OperationRecord } from '@flashyos/wallet-wdk';
+import type { OperationRecord } from '@flashynetwork/wallet-wdk';
 
 export const SELECTORS = {
   getTokenAllowance: '0x94b31fbd', // getTokenAllowance(address,address,address)

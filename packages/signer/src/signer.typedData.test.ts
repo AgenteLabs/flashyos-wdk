@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { generateKeyPairSync, sign } from 'crypto';
-import { eip3009TypedData, type SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import { eip3009TypedData, type SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 import { Signer, type SettlementReporter } from './signer';
 import { MockChain } from './chain';
 import { canonicalize } from './verify';

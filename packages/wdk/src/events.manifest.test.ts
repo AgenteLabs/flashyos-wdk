@@ -12,7 +12,7 @@ describe('docs/wallet/schema/events.json', () => {
     const manifest = {
       $id: 'https://flashyos.com/schema/wallet/events.json',
       title: 'FlashyEvent types',
-      description: 'Every event @flashyos/wdk emits, one per verb. Shape: { type, at, orgId, agentName?, data }.',
+      description: 'Every event @flashynetwork/wdk emits, one per verb. Shape: { type, at, orgId, agentName?, data }.',
       types: [...FLASHY_EVENT_TYPES],
     };
     const expected = JSON.stringify(manifest, null, 2) + '\n';

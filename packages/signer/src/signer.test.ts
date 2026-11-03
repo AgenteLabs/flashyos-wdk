@@ -3,7 +3,7 @@ import { generateKeyPairSync, sign } from 'crypto';
 import { Signer, type SettlementReporter } from './signer';
 import { MockChain } from './chain';
 import { canonicalize } from './verify';
-import type { SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 
 // The signer's five refusals, in order, and the one path through them. Every
 // refusal here is a case where a valid-looking request would have moved money

@@ -12,7 +12,7 @@
 // acceptable, and this is where it is caught.
 
 import type { KeyObject } from 'crypto';
-import { extractEip3009Operation, extractOperation, recordWithinAuthorization, type Eip712TypedData, type OperationRecord, type SignedSpendAuthorization, type SignerCall } from '@flashyos/wallet-wdk';
+import { extractEip3009Operation, extractOperation, recordWithinAuthorization, type Eip712TypedData, type OperationRecord, type SignedSpendAuthorization, type SignerCall } from '@flashynetwork/wallet-wdk';
 import { TypedDataUnsupported, type ChainBackend, type ChainOutcome } from './chain';
 import { MemoryNonceStore, type NonceStore } from './nonces';
 import { publicKeyFromPem, verifyAuthorization } from './verify';

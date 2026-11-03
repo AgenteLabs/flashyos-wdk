@@ -6,7 +6,7 @@ import { SecondLineRefusal } from './chain';
 import { MainnetNotEnabled } from './testnets';
 import { Signer } from './signer';
 import { canonicalize } from './verify';
-import type { SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 
 // A second chain family through the same signer: nothing above the backend
 // changed. Real @tetherto/wdk engine, fake TRON wallet module.

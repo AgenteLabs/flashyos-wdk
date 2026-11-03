@@ -4,7 +4,7 @@ import path from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      '@flashyos/wallet-wdk': path.resolve(__dirname, '../wallet-wdk/src/index.ts'),
+      '@flashynetwork/wallet-wdk': path.resolve(__dirname, '../wallet-wdk/src/index.ts'),
     },
   },
   test: {

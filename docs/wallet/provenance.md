@@ -40,7 +40,7 @@ node promoted. Both are in `openapi.wallet.json` components.
 | `POST /wallet/provenance/seal` | a new seal — OWNER/ADMIN; `EXPORT_EMPTY` when there is nothing to seal |
 | `GET /wallet/provenance/seals` | every seal, newest first |
 | `org.provenance.export() / seal() / seals()` | the object; `seal` emits `provenance.sealed` |
-| `verifyExport(input, { root, publicKey })` | `@flashyos/wallet-wdk` — JSONL or entries; `HASH_MISMATCH · CHAIN_BROKEN · SEQ_GAP · NOT_ORDERED · ROOT_MISMATCH · BAD_SIGNATURE`, each with the `seq` it names |
+| `verifyExport(input, { root, publicKey })` | `@flashynetwork/wallet-wdk` — JSONL or entries; `HASH_MISMATCH · CHAIN_BROKEN · SEQ_GAP · NOT_ORDERED · ROOT_MISMATCH · BAD_SIGNATURE`, each with the `seq` it names |
 | `metricsFromExport(entries, { since, until })` | the plane's `walletMetrics` arithmetic over the export |
 | `anchorCalldata(root)` | `0x<root>` — for a person to send as the data of any transaction |
 

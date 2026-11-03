@@ -3,7 +3,7 @@ import { generateKeyPairSync, sign } from 'crypto';
 import { closeSync, fsyncSync, mkdirSync, mkdtempSync, openSync, readFileSync, writeSync } from 'fs';
 import { tmpdir } from 'os';
 import { dirname, join } from 'path';
-import type { SignedSpendAuthorization, SignerCall } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization, SignerCall } from '@flashynetwork/wallet-wdk';
 import { Signer, type ExecuteResult, type SettlementReporter } from './signer';
 import { MockChain, type ChainBackend, type ChainResult } from './chain';
 import { FileNonceStore, type NonceStore } from './nonces';

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'fs';
 import path from 'path';
 import { publicKeyFromPem, verifyAuthorization } from './verify';
-import type { SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 
 // The other half of the conformance pair: an authorization signed by the API
 // (packages/api/src/lib/wallet/fixtures.test.ts) verifies here with only the

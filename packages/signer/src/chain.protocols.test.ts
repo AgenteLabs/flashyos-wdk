@@ -5,7 +5,7 @@ import { SecondLineRefusal, WdkChain, type WdkEvmAccount, type WdkEvmTransaction
 import { Signer } from './signer';
 import { generateKeyPairSync, sign } from 'crypto';
 import { canonicalize } from './verify';
-import type { SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 
 // Swaps and bridges through WdkChain: executed from the call's options,
 // through a registered WDK protocol, with WDK's engine intercepting the

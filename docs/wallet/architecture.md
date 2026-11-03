@@ -14,7 +14,7 @@ Companions: `threat-model.md` (why), `spec.md` (the contract), `runbook.md`
  │  never: keys, policy   │   verdict     │  never: a seed             │    5 min)       │  plane's PUBLIC key   │
  └────────────────────────┘               └────────────────────────────┘                 └──────────┬────────────┘
           ▲                                         │  every verdict                                │ settle
-          │  @flashyos/wallet-wdk                    ▼                                               │ (wallet:settle)
+          │  @flashynetwork/wallet-wdk               ▼                                               │ (wallet:settle)
           │  (client · elicitation handler ·  ┌──────────────┐                                       ▼
           │   policy rule · TransactionPolicy)│ Flashy Mind  │ ◀───────────────────────────  Tether WDK → chain
                                               └──────────────┘

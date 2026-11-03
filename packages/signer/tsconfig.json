@@ -9,7 +9,7 @@
     "declaration": true,
     "outDir": "./dist",
     "skipLibCheck": true,
-    "paths": { "@flashyos/wallet-wdk": ["../wallet-wdk/src/index.ts"] }
+    "paths": { "@flashynetwork/wallet-wdk": ["../wallet-wdk/src/index.ts"] }
   },
   "include": ["src"]
 }

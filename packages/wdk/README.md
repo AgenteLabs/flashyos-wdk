@@ -1,4 +1,4 @@
-# @flashyos/wdk
+# @flashynetwork/wdk
 
 The FlashyOS agent object. One interface for the seven things an autonomous
 organization does with money on Tether WDK:
@@ -10,7 +10,7 @@ create an agent → give it an identity → provision financial capabilities
 ```
 
 ```ts
-import { FlashyOrganization, HttpTransport } from '@flashyos/wdk';
+import { FlashyOrganization, HttpTransport } from '@flashynetwork/wdk';
 
 const org = new FlashyOrganization(new HttpTransport({
   baseUrl: 'https://api.flashyos.com', orgId, sessionToken, signerUrl: 'http://signer.internal:8787',

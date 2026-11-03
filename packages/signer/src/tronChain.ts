@@ -9,7 +9,7 @@
 // second-line rule covers both by name. Receipts come from the account's
 // own `waitForTransaction`, since TRON speaks no eth_getTransactionReceipt.
 
-import { extractOperation, recordWithinAuthorization, type OperationRecord, type SignerCall } from '@flashyos/wallet-wdk';
+import { extractOperation, recordWithinAuthorization, type OperationRecord, type SignerCall } from '@flashynetwork/wallet-wdk';
 import { SecondLineRefusal, SECOND_LINE_POLICY_ID, type ChainBackend, type ChainOutcome, type ChainResult, type ExecuteOptions, type WdkPolicyContext } from './chain';
 import { assertTestnet, type Testnet } from './testnets';
 

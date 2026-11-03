@@ -51,7 +51,7 @@ it is the thing that holds when the signer's own code is wrong.
 
 | Path | Who holds the seed | Lines of defence | Use |
 |---|---|---|---|
-| **Signer path** — agent → plane → `@flashyos/signer` → `WdkChain` | the signer | plane verdict · signer re-derivation from the real call · WDK policy engine | FlashyOS agents; the demos; the pilot |
+| **Signer path** — agent → plane → `@flashynetwork/signer` → `WdkChain` | the signer | plane verdict · signer re-derivation from the real call · WDK policy engine | FlashyOS agents; the demos; the pilot |
 | **Toolkit path** — agent → `@tetherto/wdk-mcp-toolkit` → elicitation → plane | the toolkit process | plane verdict only | an operator already running Tether's MCP server who wants organizational policy in front of it |
 
 In the toolkit path the elicitation carries the confirmation *message*, not

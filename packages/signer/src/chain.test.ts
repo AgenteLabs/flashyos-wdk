@@ -190,7 +190,7 @@ describe('WdkChain — per-agent accounts and typed data (Phases 17–18)', () =
   });
 
   it('signs matching typed data through the governed account, and the second line refuses any other typed data', async () => {
-    const { eip3009TypedData } = await import('@flashyos/wallet-wdk');
+    const { eip3009TypedData } = await import('@flashynetwork/wallet-wdk');
     const signing = async (): Promise<WdkModules> => {
       class SigningManager extends IndexedManager {
         async getAccount(index = 0) {
@@ -212,7 +212,7 @@ describe('WdkChain — per-agent accounts and typed data (Phases 17–18)', () =
 
   it('reports TypedDataUnsupported when the WDK account throws NotImplementedError (the seed signer in beta.19 does)', async () => {
     const { TypedDataUnsupported } = await import('./chain');
-    const { eip3009TypedData } = await import('@flashyos/wallet-wdk');
+    const { eip3009TypedData } = await import('@flashynetwork/wallet-wdk');
     const notImplemented = async (): Promise<WdkModules> => {
       class NIManager extends IndexedManager {
         async getAccount(index = 0) {

@@ -10,7 +10,7 @@
 // transport makes with this agent's token, and every refusal is the plane's
 // or the signer's, returned as a value with its reason — never thrown.
 
-import { eip3009TypedData, extractOperation, parseX402Challenge, x402PaymentHeader, x402Record, X402Refused } from '@flashyos/wallet-wdk';
+import { eip3009TypedData, extractOperation, parseX402Challenge, x402PaymentHeader, x402Record, X402Refused } from '@flashynetwork/wallet-wdk';
 import { randomBytes } from 'crypto';
 import type { FlashyEvents } from './events';
 import type { Transport } from './transport';

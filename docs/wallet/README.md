@@ -17,11 +17,11 @@ so that FlashyOS agents can hold governed economic agency on Tether WDK.
 | The on-chain limit: the Safe Allowance Module as the signer's third line — extractor, reader, pre-flight refusal — and the steps a person takes to close the gate | [`onchain-limit.md`](onchain-limit.md) |
 | The plane's face: the `/wallet` page — envelopes as a tree, the ledger, the escalation queue, money in with receipts, the week's numbers — and the browser test that records the OWNER path | [`screens.md`](screens.md) |
 | The phases a person runs — the testnet week, sending the drafts, the settled month, enabling a chain — what is ready, what they do, what done looks like | [`human-phases.md`](human-phases.md) |
-| The object — `@flashyos/wdk`: the seven verbs on one interface, one transport with two implementations, one event system; both demos re-run through it with identical frames; TRON through a pack and a backend | [`object.md`](object.md) · [`packages/wdk/README.md`](../../packages/wdk/README.md) |
+| The object — `@flashynetwork/wdk`: the seven verbs on one interface, one transport with two implementations, one event system; both demos re-run through it with identical frames; TRON through a pack and a backend | [`object.md`](object.md) · [`packages/wdk/README.md`](../../packages/wdk/README.md) |
 | Identify — one WDK account index per agent; the envelope tree as a Safe Allowance Module plan a person executes | [`identity.md`](identity.md) |
 | Interoperate — signed invoices from payees outside FlashyOS, plane-signed receipts verified offline with the public key, x402 challenges answered as bounded records signed off-chain | [`interop.md`](interop.md) |
 | Meter — a cap under one decision, ticks without one, a close reconciled against the provider's count | [`meter.md`](meter.md) |
-| Prove — the hash-chained export, the signed Merkle seal, the verifier in `@flashyos/wallet-wdk`, metrics re-derived from the export | [`provenance.md`](provenance.md) |
+| Prove — the hash-chained export, the signed Merkle seal, the verifier in `@flashynetwork/wallet-wdk`, metrics re-derived from the export | [`provenance.md`](provenance.md) |
 | Network — the weekly numbers summed over the organizations that opted in, with the count; the `/network` page | [`network.md`](network.md) |
 | Run — `flashyos-run agent.mjs`: the object pre-wired from the environment; a whole agent in one function | [`run.md`](run.md) |
 | Federation — the plane's identity document and key rotation, the trusted-plane registry, the org's own key and invoices out to any payer, receipts in from any trusted plane, x402 as a server, the money page in the digest, the federation run pinned | [`federation.md`](federation.md) |

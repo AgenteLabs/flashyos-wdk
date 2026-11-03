@@ -3,7 +3,7 @@
 // the HTTP transport passes them through and the in-process transport
 // serializes to them. The object never sees a Date.
 
-import type { AuthorizationView, OperationKind, OperationRecord, SignedSpendAuthorization, SignerCall, Verdict } from '@flashyos/wallet-wdk';
+import type { AuthorizationView, OperationKind, OperationRecord, SignedSpendAuthorization, SignerCall, Verdict } from '@flashynetwork/wallet-wdk';
 
 export type { AuthorizationView, OperationKind, OperationRecord, SignedSpendAuthorization, SignerCall, Verdict };
 
@@ -193,7 +193,7 @@ export interface WalletMetrics {
   settlementLatencySeconds: { mean: number | null; median: number | null; samples: number };
 }
 
-/** What a signer answers. Mirrors @flashyos/signer's ExecuteResult without depending on it. */
+/** What a signer answers. Mirrors @flashynetwork/signer's ExecuteResult without depending on it. */
 export type ExecuteResult =
   | { ok: true; txHash: string; outcome: 'CONFIRMED' | 'REVERTED'; settled: boolean }
   | { ok: false; code: string; reason: string };
@@ -208,7 +208,7 @@ export type TransactResult =
 
 // ─── Phases 17–18–19: identity, interop, meters ──────────────────────────────
 
-import type { Eip712TypedData, SignedInvoice, SignedReceipt, X402Challenge } from '@flashyos/wallet-wdk';
+import type { Eip712TypedData, SignedInvoice, SignedReceipt, X402Challenge } from '@flashynetwork/wallet-wdk';
 export type { Eip712TypedData, SignedInvoice, SignedReceipt, X402Challenge };
 
 export type ChainFamily = 'evm' | 'tron';
@@ -317,7 +317,7 @@ export interface PlanePublicKey {
   publicKey: string;
 }
 
-/** What a signer answers to typed data. Mirrors @flashyos/signer's SignTypedDataResult. */
+/** What a signer answers to typed data. Mirrors @flashynetwork/signer's SignTypedDataResult. */
 export type SignTypedDataResult =
   | { ok: true; signature: string; address: string; reference: string; settled: boolean }
   | { ok: false; code: string; reason: string };
@@ -332,7 +332,7 @@ export type Pay402Result =
 
 // ─── Phase 20–21: provenance and the network ─────────────────────────────────
 
-import type { ProvenanceEntry, SignedProvenanceRoot } from '@flashyos/wallet-wdk';
+import type { ProvenanceEntry, SignedProvenanceRoot } from '@flashynetwork/wallet-wdk';
 export type { ProvenanceEntry, SignedProvenanceRoot };
 
 export interface SealView extends SignedProvenanceRoot {
@@ -360,7 +360,7 @@ export interface NetworkWalletSummary {
 
 // ─── Phases 23–26: federation ────────────────────────────────────────────────
 
-import type { PlaneDocument, X402Challenge as X402ChallengeDoc, X402Payment } from '@flashyos/wallet-wdk';
+import type { PlaneDocument, X402Challenge as X402ChallengeDoc, X402Payment } from '@flashynetwork/wallet-wdk';
 export type { PlaneDocument, X402Payment };
 
 export interface TrustedPlaneView {

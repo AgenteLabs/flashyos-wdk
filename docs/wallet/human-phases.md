@@ -44,7 +44,7 @@ human's decision.
 
 **Ready:** invoices, settlement policies, receipts in both brains,
 receivables, the weekly `wallet/metrics` capture, the `/wallet` page, and
-the object (`@flashyos/wdk`) for the agents on both sides. The network demo
+the object (`@flashynetwork/wdk`) for the agents on both sides. The network demo
 is the rehearsal of the shape; the month is the shape lived.
 
 **The person (two of them):** two real organizations on FlashyOS, each with

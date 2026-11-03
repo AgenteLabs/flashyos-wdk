@@ -6,7 +6,7 @@ import { createSignerServer } from './server';
 import { Signer, type SignerOptions } from './signer';
 import { MockChain } from './chain';
 import { canonicalize } from './verify';
-import type { SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 
 // The HTTP face must be total (30E Ventures audit, finding N-02). A malformed
 // call, or a signer that throws for any reason, must come back as a coded HTTP

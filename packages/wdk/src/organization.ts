@@ -114,7 +114,7 @@ export class FlashyOrganization {
 
   // ── provenance (Phase 20) ─────────────────────────────────────────────
   readonly provenance = {
-    /** Every wallet fact, hash-chained. Verify with `verifyExport` from @flashyos/wallet-wdk. */
+    /** Every wallet fact, hash-chained. Verify with `verifyExport` from @flashynetwork/wallet-wdk. */
     export: (): Promise<ProvenanceEntry[]> => this.transport.provenance(),
     seals: (): Promise<SealView[]> => this.transport.seals(),
     /** A Merkle root over the export, signed by the plane. OWNER/ADMIN. */

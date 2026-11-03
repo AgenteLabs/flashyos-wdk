@@ -4,7 +4,7 @@ import { closeSync, mkdirSync, mkdtempSync, openSync, readFileSync, readdirSync,
 import { execFileSync } from 'child_process';
 import { tmpdir } from 'os';
 import { join, resolve } from 'path';
-import { eip3009TypedData, type Eip712TypedData, type OperationRecord, type SignedSpendAuthorization, type SignerCall } from '@flashyos/wallet-wdk';
+import { eip3009TypedData, type Eip712TypedData, type OperationRecord, type SignedSpendAuthorization, type SignerCall } from '@flashynetwork/wallet-wdk';
 import { Signer, type ExecuteResult, type SignTypedDataResult } from './signer';
 import { MockChain, type ChainResult, type ExecuteOptions, type TypedDataSignature } from './chain';
 import { FileNonceStore, MemoryNonceStore, type NonceStore } from './nonces';

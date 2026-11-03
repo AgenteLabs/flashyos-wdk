@@ -46,7 +46,7 @@ loader (`node --import tsx`) or compiled.
 
 | | |
 |---|---|
-| `configFromEnv`, `runAgentModule` | `packages/wdk/src/run.ts` (exported from `@flashyos/wdk`) |
+| `configFromEnv`, `runAgentModule` | `packages/wdk/src/run.ts` (exported from `@flashynetwork/wdk`) |
 | the bin | `packages/wdk/src/cli.ts` → `dist/cli.js`, `"bin": { "flashyos-run" }` |
 | the example | `packages/wdk/examples/procurement.mjs` |
 

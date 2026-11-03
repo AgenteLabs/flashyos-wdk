@@ -1,4 +1,4 @@
-# Invariants — `@flashyos/signer`
+# Invariants — `@flashynetwork/signer`
 
 The guarantees this signer makes, each stated once, each with the code that
 enforces it and the tests that prove it. Written to the `invariants/1`

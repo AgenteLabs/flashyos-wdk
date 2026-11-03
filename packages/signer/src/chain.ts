@@ -7,7 +7,7 @@
 // poller so "hash" is not mistaken for "confirmed", and WDK's own policy
 // engine registered as a second line inside the process that holds the seed.
 
-import { extractEip3009Operation, extractOperation, isProtocolCall, recordWithinAuthorization, type Eip712TypedData, type OperationRecord, type SignerCall } from '@flashyos/wallet-wdk';
+import { extractEip3009Operation, extractOperation, isProtocolCall, recordWithinAuthorization, type Eip712TypedData, type OperationRecord, type SignerCall } from '@flashynetwork/wallet-wdk';
 import { ReceiptPoller, type Receipt } from './receipts';
 import { assertTestnet, type Testnet } from './testnets';
 

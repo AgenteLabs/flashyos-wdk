@@ -41,7 +41,7 @@ Revocation stops new receipts under that key; receipts already accepted
 were verified at the time and stay. **A plane trusts itself:** two orgs on
 one plane settle with no registry entry.
 
-`verifyReceipt(receipt, { trustedKeys })` in `@flashyos/wallet-wdk` takes the
+`verifyReceipt(receipt, { trustedKeys })` in `@flashynetwork/wallet-wdk` takes the
 registry's keys; `verifyPlaneDocument(doc)` checks a document's shape and
 fingerprints; `keyFingerprint(pem)` is the kid.
 

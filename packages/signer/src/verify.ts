@@ -7,7 +7,7 @@
 // build. Only the public key ever lives here.
 
 import { createPublicKey, verify, type KeyObject } from 'crypto';
-import type { SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 
 function sortKeys(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(sortKeys);

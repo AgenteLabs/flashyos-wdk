@@ -1,11 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { extractEvmOperation } from '@flashyos/wallet-wdk';
+import { extractEvmOperation } from '@flashynetwork/wallet-wdk';
 import { SafeAllowanceLimit, SELECTORS } from './safeAllowance';
 import { Signer } from '../signer';
 import { MockChain } from '../chain';
 import { canonicalize } from '../verify';
 import { generateKeyPairSync, sign } from 'crypto';
-import type { SignedSpendAuthorization } from '@flashyos/wallet-wdk';
+import type { SignedSpendAuthorization } from '@flashynetwork/wallet-wdk';
 
 // The allowance module, read and encoded, against a scripted eth_call. The
 // contract itself is not here — that is the open half of the gate — but

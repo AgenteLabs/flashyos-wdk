@@ -2218,7 +2218,7 @@
     "/api/v1/orgs/{orgId}/wallet/external/invoices/{invoiceId}/receipt": {
       "get": {
         "summary": "The plane-signed receipt for an invoice this org paid",
-        "description": "Hand it to the payee; they verify it with the plane's public key (GET ../../public-key) and the invoice they sent — offline, with `verifyReceipt` from @flashyos/wallet-wdk.",
+        "description": "Hand it to the payee; they verify it with the plane's public key (GET ../../public-key) and the invoice they sent — offline, with `verifyReceipt` from @flashynetwork/wallet-wdk.",
         "security": [
           {
             "session": []
@@ -2302,7 +2302,7 @@
     "/api/v1/orgs/{orgId}/wallet/provenance": {
       "get": {
         "summary": "The export: every wallet fact, hash-chained (Phase 20)",
-        "description": "JSON by default; ?format=jsonl for one entry per line. Verify offline with `verifyExport` from @flashyos/wallet-wdk, the latest seal and the plane's public key.",
+        "description": "JSON by default; ?format=jsonl for one entry per line. Verify offline with `verifyExport` from @flashynetwork/wallet-wdk, the latest seal and the plane's public key.",
         "security": [
           {
             "session": []
